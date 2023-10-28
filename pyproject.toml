@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "today-in-nature"
+version = "1.0.0"
+description = "Prints a motd about what's happening in nature today."
+authors = ["Menno Liefstingh <todayinnature@menno.ai>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+rich = "^13"
+pytz = "^2023.3"
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+today-in-nature = "today_in_nature.main:main"
