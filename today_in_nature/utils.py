@@ -6,12 +6,13 @@ from rich.panel import Panel
 
 def install_in_shell():
     """
-    Prompts the user for language and date format preferences, and adds a command to the user's shell config file
-    to display a message of the day (motd) with information about today's date and a nature fact in the specified
-    language and date format.
+    Prompts the user for language and date format preferences, and adds a command to the
+    user's shell config file to display a message of the day (motd) with information about
+    today's date and a nature fact in the specified language and date format.
 
     Raises:
-        Exception: If the user's shell is not supported, or if the user enters an invalid language or date format.
+        Exception: If the user's shell is not supported, or if the user enters an invalid
+                    language or date format.
     """
     # Get shell type
     shell = os.environ["SHELL"]
