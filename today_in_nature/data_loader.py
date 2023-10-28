@@ -9,11 +9,23 @@ CACHE_DIR = os.path.expanduser("~/.cache/today_in_nature")
 
 
 def ensure_dir(directory: str):
+    """
+    Ensure that the specified directory exists, creating it if necessary.
+
+    Args:
+        directory (str): The directory to ensure exists.
+    """
     if not os.path.exists(directory):
         os.makedirs(directory)
 
 
 def get_data():
+    """
+    Get the data for today's nature even from the cache or API.
+
+    Returns:
+        dict: The data for today's nature event.
+    """
     ensure_dir(CACHE_DIR)
     amsterdam_tz = pytz.timezone("Europe/Amsterdam")
     date = datetime.now(amsterdam_tz)

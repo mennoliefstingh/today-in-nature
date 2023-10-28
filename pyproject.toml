@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "today-in-nature"
-version = "1.0.0"
+version = "1.0.1"
 description = "Prints a motd about what's happening in nature today."
 authors = ["Menno Liefstingh <todayinnature@menno.ai>"]
 

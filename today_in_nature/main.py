@@ -49,6 +49,12 @@ TITLE_STR = {"en": "TODAY IN NATURE", "nl": "VANDAAG IN DE NATUUR"}
 
 
 def main():
+    """
+    Main function that retrieves data and prints it in a formatted box.
+
+    Returns:
+        None
+    """
     args = parse_args()
     data = get_data()
 
